@@ -19,4 +19,7 @@ yarn-error.log*
 .vs/
 /.idea
 .cache
+
+
 README.md
+.gitignore
