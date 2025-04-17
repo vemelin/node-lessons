@@ -1,4 +1,4 @@
-const convertInfo = require('convert-user-info');
+import convertInfo from 'convert-user-info';
 
 console.log(
     convertInfo({
