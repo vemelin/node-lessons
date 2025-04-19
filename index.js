@@ -1,9 +1,10 @@
-const convertInfo = require('convert-user-info');
+// const convertInfo = require('convert-user-info');
 
 console.log(
-    convertInfo({
-        name: 'vasiliy pupkin',
-        dateBirth: '01.01.1984',
-        purpose: 'grow opportunity'
-    })
+    '########## Application successfully running ########## \n'
+    // convertInfo({
+    //     name: 'vasiliy pupkin',
+    //     dateBirth: '01.01.1984',
+    //     purpose: 'grow opportunity'
+    // })
 );

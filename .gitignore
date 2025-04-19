@@ -16,6 +16,7 @@ yarn-debug.log*
 yarn-error.log*
 
 # Visual Studio 2019/2022 cache/options directory
+.vscode
 .vs/
 /.idea
 .cache

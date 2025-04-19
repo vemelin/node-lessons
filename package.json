@@ -1,0 +1,55 @@
+{
+  "name": "pwp",
+  "version": "1.0.0",
+  "description": "First project",
+  "keywords": [
+    "keyword",
+    "package",
+    "lesson"
+  ],
+  "homepage": "https://github.com/vemelin/node-lessons#readme",
+  "bugs": {
+    "url": "https://github.com/vemelin/node-lessons/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://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@github.com/vemelin/node-lessons.git"
+  },
+  "license": "ISC",
+  "contributers": [
+    {
+      "name": "Vasiliy Pupkin",
+      "email": "vasiliy@execture.design",
+      "url": "https://www.execute.design"
+    },
+    {
+      "name": "John Doe",
+      "email": "johndoe@mail.com",
+      "url": "www.jdoe.com"
+    }
+  ],
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index",
+    "dev": "nodemon index",
+    "lint": "eslint 'src/**/*.js' --quite",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "@reduxjs/toolkit": "^2.7.0",
+    "axios": "^1.8.4",
+    "bootstrap": "^5.3.5",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "react-router": "^7.5.1",
+    "sass": "^1.86.3",
+    "storybook": "^8.6.12"
+  },
+  "devDependencies": {
+    "eslint": "^9.25.0",
+    "parcel": "^2.14.4",
+    "vite": "^6.3.2",
+    "webpack": "^5.99.6"
+  }
+}
