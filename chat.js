@@ -18,11 +18,26 @@ const color = [
   `whiteBright`,
 ];
 
+const users = [
+  {
+    name: 'Sergey Kislov',
+    message: `Hey wassup fellows!`,
+  },
+  {
+    name: 'Kirill Lavrov',
+    message: `Hey yo, what's going on!`,
+  },
+  {
+    name: 'Alexandr Poylov',
+    message: `I'm the BOSS here, How are god damn people?`,
+  },
+];
+
 const chat = new EventEmitter();
 
 // Recive Message function
 const recieveMessage = () => {
-  chat.on('message', ({username, message}) => {
+  chat.on('message', ({ username, message }) => {
     // console.log(`${username}: ${message}`);
     console.log(`
       ${chalk[color[Math.floor(Math.random() * color.length)]](username)}: ${message}
@@ -32,14 +47,11 @@ const recieveMessage = () => {
 
 // Send message function
 const sendMessage = (username, message) => {
-  chat.emit('message', {username, message});
+  chat.emit('message', { username, message });
 };
 
 // Initialize messaging streamline
 recieveMessage();
 
 // Examples
-sendMessage('Sergey Kislov', `Hey wassup fellows!`);
-sendMessage('Kirill Lavrov', `Hey yo, what's going on!`);
-sendMessage('Alexandr Poylov', `I'm the BOSS here, How are you mzfkrs?`);
-
+users.map(({ name, message }) => sendMessage(name, message));
