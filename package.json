@@ -15,7 +15,7 @@
     "type": "git",
     "url": "git+https://@github.com/vemelin/node-lessons.git"
   },
-  "license": "ISC",
+  "author": "Vasiliy Pupkin",
   "contributers": [
     {
       "name": "Vasiliy Pupkin",
@@ -28,28 +28,24 @@
       "url": "www.jdoe.com"
     }
   ],
-  "type": "commonjs",
+  "license": "ISC",
+  "type": "module",
   "main": "index.js",
   "scripts": {
     "start": "node index",
+    "chat": "node chat",
     "dev": "nodemon index",
     "lint": "eslint 'src/**/*.js' --quite",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "dependencies": {
-    "@reduxjs/toolkit": "^2.7.0",
-    "axios": "^1.8.4",
-    "bootstrap": "^5.3.5",
-    "react": "^19.1.0",
-    "react-dom": "^19.1.0",
-    "react-router": "^7.5.1",
-    "sass": "^1.86.3",
-    "storybook": "^8.6.12"
-  },
   "devDependencies": {
     "eslint": "^9.25.0",
-    "parcel": "^2.14.4",
-    "vite": "^6.3.2",
-    "webpack": "^5.99.6"
+    "nodemon": "^3.1.9",
+    "prettier": "^3.5.3"
+  },
+  "dependencies": {
+    "chalk": "^5.4.1",
+    "dotenv": "^16.5.0",
+    "express": "^5.1.0"
   }
 }
