@@ -29,7 +29,7 @@ const users = [
   },
   {
     name: 'Alexandr Poylov',
-    message: `I'm the BOSS here, How are god damn people?`,
+    message: `I'm the BOSS here, How are you, god damn people!?`,
   },
 ];
 
