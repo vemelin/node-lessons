@@ -14,7 +14,7 @@ class Ticker extends EventEmitter {
 const ticker = new Ticker();
 
 ticker.on('tick', (count) => {
-  console.log(`Tick — ${count}`);
+  console.log(`Tick — ${count}`);
 });
 
 ticker.start(500, 8);
